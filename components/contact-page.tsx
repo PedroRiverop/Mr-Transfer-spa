@@ -24,27 +24,19 @@ export default function ContactPage() {
   const locations = [
     {
       city: "Santa Cruz",
-      address: "Av. San Martín #123, Equipetrol",
-      phone: "+591 3 123 4567",
-      email: "santacruz@mrtransfer.com",
-      hours: "Lun - Vie: 8:00 - 18:00, Sáb: 8:00 - 12:00",
-      mapUrl: "https://maps.google.com/?q=Santa+Cruz+Bolivia+Equipetrol",
-    },
-    {
-      city: "La Paz",
-      address: "Av. 16 de Julio #456, Prado",
-      phone: "+591 2 234 5678",
-      email: "lapaz@mrtransfer.com",
-      hours: "Lun - Vie: 8:00 - 18:00, Sáb: 8:00 - 12:00",
-      mapUrl: "https://maps.google.com/?q=La+Paz+Bolivia+Prado",
+      address: "Avenida Rosita Pochi #4430 casi esquina Hilanderia/Barrio Hilanderia entre 4to y 5to anillo",
+      phone: "+591 714 53 040",
+      email: "mstransferbolivia@gmail.com",
+      hours: "Lun - Vie: 8:00 - 17:00, Sáb: 8:00 - 12:00",
+      mapUrl: "https://maps.app.goo.gl/S4Qh6VHRkQfSHTQQ8",
     },
     {
       city: "Cochabamba",
-      address: "Av. Heroínas #789, Centro",
-      phone: "+591 4 345 6789",
-      email: "cochabamba@mrtransfer.com",
-      hours: "Lun - Vie: 8:00 - 18:00, Sáb: 8:00 - 12:00",
-      mapUrl: "https://maps.google.com/?q=Cochabamba+Bolivia+Centro",
+      address: "Calle Los claveles S/N casi esquina Victor Ustariz (Frente a Aduana)",
+      phone: "+591 714 53 040",
+      email: "mstransferbolivia@gmail.com",
+      hours: "Lun - Vie: 8:00 - 17:00, Sáb: 8:00 - 12:00",
+      mapUrl: "https://maps.app.goo.gl/aLx28UGC4W6aoSEg8",
     },
   ]
 
@@ -72,7 +64,7 @@ export default function ContactPage() {
 
   const handleWhatsApp = () => {
     const message = encodeURIComponent("Hola, me interesa conocer más sobre los servicios de MR Transfer")
-    window.open(`https://wa.me/59123456789?text=${message}`, "_blank")
+    window.open(`https://wa.me/59171453040?text=${message}`, "_blank")
   }
 
   return (
@@ -81,14 +73,14 @@ export default function ContactPage() {
       <section
         className="relative py-32 text-white overflow-hidden"
         style={{
-          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/placeholder.svg?height=600&width=1920')`,
+          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/images/oficinaMr.png')`,
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
-          <AnimatedText direction="down" className="text-5xl font-bold mb-6 gradient-text">
-            Contáctanos
+         <AnimatedText direction="up" delay={150} className="text-2xl md:text-5xl font-semibold mb-8 text-blue-200">
+            CONTÁCTANOS
           </AnimatedText>
           <AnimatedText direction="up" delay={300} className="text-xl max-w-3xl mx-auto">
             Estamos aquí para ayudarte con todas tus necesidades de transferencias internacionales. Contáctanos por el
@@ -167,7 +159,7 @@ export default function ContactPage() {
             <p className="text-xl text-gray-600">Visítanos en cualquiera de nuestras ubicaciones</p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto">
             {locations.map((location, index) => (
               <AnimatedText key={index} direction="down" delay={index * 100}>
                 <Card key={index} className="border-0 shadow-lg hover:shadow-xl transition-shadow">
@@ -210,146 +202,49 @@ export default function ContactPage() {
               </AnimatedText>
             ))}
           </div>
-        </div>
-      </section>
 
-      {/* Contact Form */}
-      <section className="py-20 bg-gray-100">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">Envíanos un Mensaje</h2>
-            <p className="text-xl text-gray-600">Completa el formulario y nos pondremos en contacto contigo</p>
-          </div>
+          {/* Map Section */}
+          <div className="mt-16">
+            <div className="text-center mb-8">
+             
+            </div>
 
-          <AnimatedText direction="up">
-            <Card className="border-0 shadow-xl">
-              <CardHeader className="bg-gradient-to-r from-blue-600 to-blue-800 text-white rounded-t-lg">
-                <CardTitle className="text-2xl text-center">Formulario de Contacto</CardTitle>
-                <CardDescription className="text-blue-100 text-center">
-                  Todos los campos son obligatorios
-                </CardDescription>
-              </CardHeader>
-              <CardContent className="p-8">
-                <form onSubmit={handleSubmit} className="space-y-6">
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                    <div>
-                      <Label htmlFor="name" className="text-sm font-medium text-gray-700">
-                        Nombre Completo *
-                      </Label>
-                      <Input
-                        id="name"
-                        name="name"
-                        type="text"
-                        required
-                        value={formData.name}
-                        onChange={handleInputChange}
-                        className="mt-1"
-                        placeholder="Tu nombre completo"
-                      />
-                    </div>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+              <div>
+                <h4 className="text-lg font-semibold mb-4 text-center">Cochabamba</h4>
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3048.4!2d-66.1568!3d-17.3895!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTfCsDIzJzIyLjIiUyA2NsKwMDknMjQuNSJX!5e0!3m2!1ses!2sbo!4v1234567890"
+                  width="100%"
+                  height="300"
+                  style={{ border: 0 }}
+                  allowFullScreen
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                  className="rounded-lg shadow-lg"
+                ></iframe>
+              </div>
 
-                    <div>
-                      <Label htmlFor="email" className="text-sm font-medium text-gray-700">
-                        Correo Electrónico *
-                      </Label>
-                      <Input
-                        id="email"
-                        name="email"
-                        type="email"
-                        required
-                        value={formData.email}
-                        onChange={handleInputChange}
-                        className="mt-1"
-                        placeholder="tu@email.com"
-                      />
-                    </div>
-                  </div>
-
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                    <div>
-                      <Label htmlFor="phone" className="text-sm font-medium text-gray-700">
-                        Teléfono *
-                      </Label>
-                      <Input
-                        id="phone"
-                        name="phone"
-                        type="tel"
-                        required
-                        value={formData.phone}
-                        onChange={handleInputChange}
-                        className="mt-1"
-                        placeholder="+591 123 456 789"
-                      />
-                    </div>
-
-                    <div>
-                      <Label htmlFor="service" className="text-sm font-medium text-gray-700">
-                        Servicio de Interés *
-                      </Label>
-                      <Input
-                        id="service"
-                        name="service"
-                        type="text"
-                        required
-                        value={formData.service}
-                        onChange={handleInputChange}
-                        className="mt-1"
-                        placeholder="Ej: Pagos a proveedores"
-                      />
-                    </div>
-                  </div>
-
-                  <div>
-                    <Label htmlFor="message" className="text-sm font-medium text-gray-700">
-                      Mensaje *
-                    </Label>
-                    <Textarea
-                      id="message"
-                      name="message"
-                      required
-                      value={formData.message}
-                      onChange={handleInputChange}
-                      className="mt-1"
-                      rows={5}
-                      placeholder="Cuéntanos más detalles sobre tu consulta..."
-                    />
-                  </div>
-
-                  <div className="text-center">
-                    <Button
-                      type="submit"
-                      size="lg"
-                      className="bg-gradient-to-r from-blue-600 to-blue-800 hover:from-blue-700 hover:to-blue-900 text-white px-8 py-3"
-                    >
-                      <Send className="h-5 w-5 mr-2" />
-                      Enviar Mensaje
-                    </Button>
-                  </div>
-                </form>
-              </CardContent>
-            </Card>
-          </AnimatedText>
-        </div>
-      </section>
-
-      {/* Map Section */}
-      <section className="py-20">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">Encuéntranos</h2>
-            <p className="text-xl text-gray-600">Estamos ubicados estratégicamente en las principales ciudades</p>
-          </div>
-
-          <div className="bg-gray-200 h-96 rounded-lg flex items-center justify-center">
-            <div className="text-center">
-              <MapPin className="h-16 w-16 text-gray-400 mx-auto mb-4" />
-              <p className="text-gray-600 text-lg">Mapa Interactivo</p>
-              <p className="text-gray-500">Integración con Google Maps</p>
+              <div>
+                <h4 className="text-lg font-semibold mb-4 text-center">Santa Cruz</h4>
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3048.4!2d-63.1821!3d-17.7834!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTfCsDQ2JzU4LjQiUyA2M8KwMTAnNTUuNiJX!5e0!3m2!1ses!2sbo!4v1234567890"
+                  width="100%"
+                  height="300"
+                  style={{ border: 0 }}
+                  allowFullScreen
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                  className="rounded-lg shadow-lg"
+                ></iframe>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
+      
+
+      
       {/* Emergency Contact */}
       <section className="py-20 bg-red-600 text-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
@@ -365,7 +260,7 @@ export default function ContactPage() {
           </Button>
         </div>
       </section>
-      
+
       <Footer />
     </div>
   )

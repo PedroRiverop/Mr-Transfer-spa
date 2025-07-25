@@ -9,10 +9,11 @@ import {
   DialogTitle,
   DialogTrigger,
 } from "@/components/ui/dialog"
-import { CreditCard, Ship, DollarSign, ShoppingCart, MapPin } from "lucide-react"
+import { MapPin, MessageCircle } from "lucide-react"
 import AnimatedText from "./animated-text"
 import AnimatedCounter from "./animated-counter"
 import Footer from "./footer"
+import Image from "next/image"
 
 interface HomePageProps {
   onNavigateToServices: () => void
@@ -21,34 +22,39 @@ interface HomePageProps {
 export default function HomePage({ onNavigateToServices }: HomePageProps) {
   const services = [
     {
-      icon: <DollarSign className="h-8 w-8 text-blue-600" />,
+      icon: <Image src="/images/monedas.png" alt="Pagos en dólares" width={48} height={48} />,
       title: "Pagos en dólares, euros y soles",
       description: "A proveedores en el exterior",
       details:
         "Realizamos transferencias internacionales para que tus proveedores reciban sus pagos sin demoras. Tiempo de transferencia entre 4 a 48 horas con documentación probatoria completa.",
     },
     {
-      icon: <Ship className="h-8 w-8 text-blue-600" />,
+      icon: <Image src="/images/barco.png" alt="Pagos a compañías marítimas" width={48} height={48} />,
       title: "Pagos a compañías marítimas",
       description: "O forwarders en el exterior",
       details:
         "Pagos rápidos y seguros a navieras y agentes de carga, evitando retrasos en la liberación de tu carga y manteniendo tu logística bajo control.",
     },
     {
-      icon: <CreditCard className="h-8 w-8 text-blue-600" />,
+      icon: <Image src="/images/billete.png" alt="Entrega de dólares en Bolivia" width={48} height={48} />,
       title: "Entrega de dólares en Bolivia",
       description: "Por remesas y exportaciones",
       details:
         "Recibe dinero en dólares de cualquier parte del mundo. Entrega entre 2 a 24 horas una vez confirmada la transferencia a nuestra cuenta.",
     },
     {
-      icon: <ShoppingCart className="h-8 w-8 text-blue-600" />,
+      icon: <Image src="/images/tarjetas.png" alt="Pagos con tarjetas" width={48} height={48} />,
       title: "Pagos con tarjetas",
       description: "Para compras por internet",
       details:
         "Te ayudamos a comprar en Alibaba, Amazon, eBay, TikTok y otras plataformas. También pagamos pasajes, hoteles y suscripciones digitales.",
     },
   ]
+
+  const handleWhatsApp = () => {
+    const message = encodeURIComponent("Hola, me interesa conocer más sobre los servicios de MR Transfer")
+    window.open(`https://wa.me/59171453040?text=${message}`, "_blank")
+  }
 
   return (
     <div className="min-h-screen">
@@ -62,19 +68,24 @@ export default function HomePage({ onNavigateToServices }: HomePageProps) {
         }}
       >
         <div className="text-center max-w-4xl mx-auto px-4 z-10">
-          <AnimatedText direction="down" className="text-5xl md:text-6xl font-bold mb-6 gradient-text">
-            Soluciones en transferencias al exterior
+          <AnimatedText direction="down" className="text-4xl md:text-5xl font-bold mb-6 text-white">
+            TRANSFERENCIAS INTERNACIONALES
+          </AnimatedText>
+          <AnimatedText direction="up" delay={150} className="text-2xl md:text-3xl font-semibold mb-8 text-blue-200">
+            RÁPIDAS Y SEGURAS
           </AnimatedText>
           <AnimatedText direction="up" delay={300} className="text-xl md:text-2xl mb-8 leading-relaxed">
-            Realizamos transferencias en dólares, euros y soles para pagos a proveedores en el exterior, entrega en DÓLARES en Bolivia a exportadores por cobro de ventas internacionales y remesas a cualquier parte del mundo.
+            Realizamos transferencias en dólares, euros y soles para pagos a proveedores en el exterior, entrega en
+            DÓLARES en Bolivia a exportadores por cobro de ventas internacionales y remesas a cualquier parte del mundo.
           </AnimatedText>
           <AnimatedText direction="fade" delay={600} className="text-lg md:text-xl mb-8 text-yellow-300 pulse-slow">
             Sin límite de monto, bajo normativa aduanera, con respaldo legal, fácil, seguro y rápido.
           </AnimatedText>
           <AnimatedText direction="up" delay={900}>
-            <Button size="lg" className="bg-orange-600 hover:bg-orange-700 text-white px-8 py-4 text-lg btn-dynamic">
-              Comenzar Ahora
-            </Button>
+            <Button onClick={handleWhatsApp} className="bg-green-500 hover:bg-green-600 text-white">
+                    <MessageCircle className="h-4 w-4 mr-2" />
+                    Chatear Ahora
+                  </Button>
           </AnimatedText>
         </div>
 
@@ -209,6 +220,27 @@ export default function HomePage({ onNavigateToServices }: HomePageProps) {
             <source src="https://mstransfer.com.bo/wp-content/uploads/2025/03/IMG_7436.mp4" type="video/mp4" />
             Tu navegador no soporta el elemento de video.
           </video>
+          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2  bg-opacity-50 text-white p-4 rounded-lg">
+            <p className="text-xl font-semibold">Visítanos en:</p>
+           
+            <a
+              href="https://maps.app.goo.gl/aLx28UGC4W6aoSEg8"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-blue-300"
+            >
+              Cochabamba
+            </a>
+            <br />
+            <a
+              href="https://maps.app.goo.gl/S4Qh6VHRkQfSHTQQ8"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-blue-300"
+            >
+              Santa Cruz
+            </a>
+          </div>
         </div>
       </section>
 
@@ -224,38 +256,26 @@ export default function HomePage({ onNavigateToServices }: HomePageProps) {
                     <div className="flex items-center gap-3 hover:text-orange-500 transition-colors">
                       <MapPin className="h-5 w-5 text-orange-500" />
                       <a
-                        href="https://maps.google.com"
+                        href="https://maps.app.goo.gl/aLx28UGC4W6aoSEg8"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="hover:text-orange-500 transition-colors"
                       >
-                        Sucursal Santa Cruz - Av. San Martín #123
+                        Sucursal Santa Cruz - Av. Rosita Pochi #4430
                       </a>
                     </div>
                   </AnimatedText>
-                  <AnimatedText direction="right" delay={200}>
-                    <div className="flex items-center gap-3 hover:text-orange-500 transition-colors">
-                      <MapPin className="h-5 w-5 text-orange-500" />
-                      <a
-                        href="https://maps.google.com"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="hover:text-orange-500 transition-colors"
-                      >
-                        Sucursal La Paz - Av. 16 de Julio #456
-                      </a>
-                    </div>
-                  </AnimatedText>
+                  
                   <AnimatedText direction="right" delay={300}>
                     <div className="flex items-center gap-3 hover:text-orange-500 transition-colors">
                       <MapPin className="h-5 w-5 text-orange-500" />
                       <a
-                        href="https://maps.google.com"
+                        href="https://maps.app.goo.gl/S4Qh6VHRkQfSHTQQ8"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="hover:text-orange-500 transition-colors"
                       >
-                        Sucursal Cochabamba - Av. Heroínas #789
+                        Sucursal Cochabamba -  C. Los claveles S/N casi esquina Victor Ustariz
                       </a>
                     </div>
                   </AnimatedText>
@@ -271,7 +291,7 @@ export default function HomePage({ onNavigateToServices }: HomePageProps) {
                 playsInline
                 poster="/placeholder.svg?height=300&width=500"
               >
-                <source src="https://mstransfer.com.bo/wp-content/uploads/2025/03/IMG_7436.mp4" type="video/mp4" />
+                <source src="/images/" type="video/mp4" />
                 Tu navegador no soporta el elemento de video.
               </video>
             </AnimatedText>

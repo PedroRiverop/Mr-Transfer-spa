@@ -100,8 +100,8 @@ export default function ServicesPage() {
         }}
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
-          <AnimatedText direction="down" className="text-5xl font-bold mb-6 gradient-text">
-            Nuestros Servicios
+          <AnimatedText direction="up" delay={150} className="text-2xl md:text-5xl font-semibold mb-8 text-blue-200">
+            NUESTROS SERVICIOS
           </AnimatedText>
           <AnimatedText direction="up" delay={300} className="text-2xl mb-8 pulse-slow">
             Que la falta de DÓLARES... ¡No te impida, SEGUIR CRECIENDO!

@@ -2,7 +2,19 @@
 
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-import { Shield, Heart, Users, Award, CheckCircle, Globe, TrendingUp, Handshake } from "lucide-react"
+import {
+  Shield,
+  Heart,
+  Users,
+  Award,
+  CheckCircle,
+  Globe,
+  TrendingUp,
+  Handshake,
+  MessageCircle,
+  Instagram,
+  Facebook,
+} from "lucide-react"
 import AnimatedText from "./animated-text"
 import AnimatedCounter from "./animated-counter"
 import Footer from "./footer"
@@ -105,7 +117,7 @@ export default function AboutPage() {
             </AnimatedText>
             <AnimatedText direction="right" className="img-dynamic">
               <img
-                src="/placeholder.svg?height=400&width=600"
+                src="/images/nosotrosMr1.png"
                 alt="Oficina MR Transfer"
                 className="w-full h-80 object-cover rounded-lg shadow-lg"
               />
@@ -335,6 +347,56 @@ export default function AboutPage() {
           className="absolute bottom-10 left-10 w-24 h-24 bg-white/10 rounded-full floating"
           style={{ animationDelay: "1s" }}
         ></div>
+      </section>
+
+      {/* Social Media Section */}
+      <section className="py-16 bg-white">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <AnimatedText direction="up" className="text-3xl font-bold text-gray-900 mb-6">
+            Síguenos en Nuestras Redes
+          </AnimatedText>
+          <AnimatedText direction="up" delay={200} className="text-lg text-gray-600 mb-8">
+            Mantente conectado con nosotros para las últimas noticias y actualizaciones
+          </AnimatedText>
+          <AnimatedText direction="up" delay={400}>
+            <div className="flex justify-center gap-6">
+              <a
+                href="https://wa.link/aqmtjx"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-green-500 hover:bg-green-600 text-white p-4 rounded-full transition-colors"
+              >
+                <MessageCircle className="h-6 w-6" />
+              </a>
+              <a
+                href="https://www.instagram.com/mstransferbolivia/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-pink-500 hover:bg-pink-600 text-white p-4 rounded-full transition-colors"
+              >
+                <Instagram className="h-6 w-6" />
+              </a>
+              <a
+                href="https://www.facebook.com/mstransferbolivia"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-blue-600 hover:bg-blue-700 text-white p-4 rounded-full transition-colors"
+              >
+                <Facebook className="h-6 w-6" />
+              </a>
+              <a
+                href="https://www.tiktok.com/@ms_transfer?lang=es"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-black hover:bg-gray-800 text-white p-4 rounded-full transition-colors"
+              >
+                <svg className="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z" />
+                </svg>
+              </a>
+            </div>
+          </AnimatedText>
+        </div>
       </section>
 
       <Footer />

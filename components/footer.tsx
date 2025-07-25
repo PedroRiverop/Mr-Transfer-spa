@@ -37,11 +37,11 @@ export default function Footer() {
               <div className="space-y-2 text-gray-300">
                 <div className="flex items-center gap-2 hover:text-orange-400 transition-colors">
                   <Phone className="h-4 w-4" />
-                  <span>+591 123 456 789</span>
+                  <span>+591 714 53 040</span>
                 </div>
                 <div className="flex items-center gap-2 hover:text-orange-400 transition-colors">
                   <Mail className="h-4 w-4" />
-                  <span>info@mrtransfer.com</span>
+                  <span>mstransferbolivia@gmail.com</span>
                 </div>
               </div>
             </div>
@@ -53,7 +53,7 @@ export default function Footer() {
               <div className="space-y-2 text-gray-300">
                 <div className="flex items-center gap-2">
                   <Clock className="h-4 w-4" />
-                  <span>Lun - Vie: 8:00 - 18:00</span>
+                  <span>Lun - Vie: 8:00 - 17:00</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <Clock className="h-4 w-4" />
@@ -67,6 +67,17 @@ export default function Footer() {
         <AnimatedText direction="fade" delay={500}>
           <div className="border-t border-gray-700 mt-8 pt-8 text-center text-gray-300">
             <p>&copy; 2024 MR Transfer. Todos los derechos reservados.</p>
+            <p className="text-xs mt-2 opacity-70">
+              Desarrollado por{" "}
+              <a
+                href="https://www.linkedin.com/in/jpedro-rivero-pe%C3%B1a/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-orange-400 transition-colors"
+              >
+                PedroRiverop
+              </a>
+            </p>
           </div>
         </AnimatedText>
       </div>
