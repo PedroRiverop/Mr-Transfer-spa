@@ -20,7 +20,7 @@ export default function Navbar({ currentView, onNavigate }: NavbarProps) {
   ]
 
   return (
-    <nav className="bg-white shadow-lg sticky top-0 z-50">
+    <nav className="bg-gray-800 shadow-lg sticky top-0 z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
@@ -29,10 +29,9 @@ export default function Navbar({ currentView, onNavigate }: NavbarProps) {
               <img
                 src="/images/logo-mr-transfer.webp"
                 alt="MR Transfer"
-                className="h-10 w-auto hover:scale-105 transition-transform duration-300"
-              
+                className="h-10 w-auto hover:scale-105 transition-transform duration-300 filter brightness-0 invert"
               />
-              <span className="font-bold text-blue-600 hidden sm:block">MR Transfer</span>
+              <span className="font-bold text-white hidden sm:block">MR Transfer</span>
             </div>
           </div>
 
@@ -46,7 +45,7 @@ export default function Navbar({ currentView, onNavigate }: NavbarProps) {
                   className={`px-3 py-2 rounded-md text-sm font-medium transition-colors ${
                     currentView === item.id
                       ? "bg-blue-600 text-white"
-                      : "text-gray-700 hover:bg-blue-50 hover:text-blue-600"
+                      : "text-gray-300 hover:bg-gray-700 hover:text-white"
                   }`}
                 >
                   {item.label}
@@ -57,7 +56,12 @@ export default function Navbar({ currentView, onNavigate }: NavbarProps) {
 
           {/* Mobile menu button */}
           <div className="md:hidden">
-            <Button variant="ghost" size="sm" onClick={() => setIsMenuOpen(!isMenuOpen)}>
+            <Button
+              variant="ghost"
+              size="sm"
+              onClick={() => setIsMenuOpen(!isMenuOpen)}
+              className="text-white hover:bg-gray-700"
+            >
               {isMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
             </Button>
           </div>
@@ -66,7 +70,7 @@ export default function Navbar({ currentView, onNavigate }: NavbarProps) {
         {/* Mobile Navigation */}
         {isMenuOpen && (
           <div className="md:hidden">
-            <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white border-t">
+            <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-gray-800 border-t border-gray-700">
               {navItems.map((item) => (
                 <button
                   key={item.id}
@@ -77,7 +81,7 @@ export default function Navbar({ currentView, onNavigate }: NavbarProps) {
                   className={`block px-3 py-2 rounded-md text-base font-medium w-full text-left transition-colors ${
                     currentView === item.id
                       ? "bg-blue-600 text-white"
-                      : "text-gray-700 hover:bg-blue-50 hover:text-blue-600"
+                      : "text-gray-300 hover:bg-gray-700 hover:text-white"
                   }`}
                 >
                   {item.label}

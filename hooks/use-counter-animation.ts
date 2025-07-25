@@ -1,38 +1,45 @@
 "use client"
 
-import { useState } from "react"
+import { useEffect, useState } from "react"
 
-export function useCounterAnimation(end: number, duration = 2000, start = 0) {
+interface UseCounterAnimationProps {
+  end: number
+  duration?: number
+  start?: number
+  isVisible?: boolean
+}
+
+export function useCounterAnimation({ end, duration = 2000, start = 0, isVisible = true }: UseCounterAnimationProps) {
   const [count, setCount] = useState(start)
-  const [isAnimating, setIsAnimating] = useState(false)
 
-  const startAnimation = () => {
-    if (isAnimating) return
+  useEffect(() => {
+    if (!isVisible) return
 
-    setIsAnimating(true)
-    const startTime = Date.now()
-    const startValue = start
+    let startTime: number
+    let animationFrame: number
 
-    const animate = () => {
-      const now = Date.now()
-      const elapsed = now - startTime
-      const progress = Math.min(elapsed / duration, 1)
+    const animate = (currentTime: number) => {
+      if (!startTime) startTime = currentTime
+      const progress = Math.min((currentTime - startTime) / duration, 1)
 
-      // Easing function for smooth animation
       const easeOutQuart = 1 - Math.pow(1 - progress, 4)
-      const currentCount = Math.floor(startValue + (end - startValue) * easeOutQuart)
+      const currentCount = Math.floor(easeOutQuart * (end - start) + start)
 
       setCount(currentCount)
 
       if (progress < 1) {
-        requestAnimationFrame(animate)
-      } else {
-        setIsAnimating(false)
+        animationFrame = requestAnimationFrame(animate)
       }
     }
 
-    requestAnimationFrame(animate)
-  }
+    animationFrame = requestAnimationFrame(animate)
 
-  return { count, startAnimation, isAnimating }
+    return () => {
+      if (animationFrame) {
+        cancelAnimationFrame(animationFrame)
+      }
+    }
+  }, [end, duration, start, isVisible])
+
+  return count
 }

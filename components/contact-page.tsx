@@ -365,6 +365,7 @@ export default function ContactPage() {
           </Button>
         </div>
       </section>
+      
       <Footer />
     </div>
   )

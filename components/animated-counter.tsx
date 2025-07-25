@@ -1,30 +1,39 @@
 "use client"
 
-import { useEffect } from "react"
-import { useIntersectionObserver } from "@/hooks/use-intersection-observer"
 import { useCounterAnimation } from "@/hooks/use-counter-animation"
+import { useIntersectionObserver } from "@/hooks/use-intersection-observer"
 
 interface AnimatedCounterProps {
   end: number
   duration?: number
-  className?: string
+  start?: number
   suffix?: string
+  className?: string
 }
 
-export default function AnimatedCounter({ end, duration = 2000, className = "", suffix = "" }: AnimatedCounterProps) {
-  const { ref, hasIntersected } = useIntersectionObserver()
-  const { count, startAnimation } = useCounterAnimation(end, duration)
+export default function AnimatedCounter({
+  end,
+  duration = 2000,
+  start = 0,
+  suffix = "",
+  className = "",
+}: AnimatedCounterProps) {
+  const { ref, isIntersecting } = useIntersectionObserver({
+    threshold: 0.1,
+    triggerOnce: true,
+  })
 
-  useEffect(() => {
-    if (hasIntersected) {
-      startAnimation()
-    }
-  }, [hasIntersected, startAnimation])
+  const count = useCounterAnimation({
+    end,
+    duration,
+    start,
+    isVisible: isIntersecting,
+  })
 
   return (
-    <div ref={ref} className={`counter-text ${className}`}>
+    <span ref={ref} className={className}>
       {count.toLocaleString()}
       {suffix}
-    </div>
+    </span>
   )
 }

@@ -9,7 +9,7 @@ import {
   DialogTitle,
   DialogTrigger,
 } from "@/components/ui/dialog"
-import { CreditCard, Ship, DollarSign, ShoppingCart, MapPin, Clock } from "lucide-react"
+import { CreditCard, Ship, DollarSign, ShoppingCart, MapPin } from "lucide-react"
 import AnimatedText from "./animated-text"
 import AnimatedCounter from "./animated-counter"
 import Footer from "./footer"
@@ -56,7 +56,7 @@ export default function HomePage({ onNavigateToServices }: HomePageProps) {
       <section
         className="relative h-screen flex items-center justify-center text-white overflow-hidden"
         style={{
-          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('/placeholder.svg?height=1080&width=1920')`,
+          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('/images/hero1mr.png')`,
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
@@ -160,38 +160,14 @@ export default function HomePage({ onNavigateToServices }: HomePageProps) {
         </div>
       </section>
 
-      {/* Visual Presence Section */}
+      {/* Visual Presence Section - Solo imagen de fondo */}
       <section className="relative h-screen">
         <div
           className="absolute inset-0 bg-cover bg-center"
           style={{
-            backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/images/about-section.webp')`,
+            backgroundImage: `url('/images/about-section.webp')`,
           }}
-        >
-          <div className="absolute inset-0 flex items-center justify-center">
-            <div className="text-center text-white max-w-4xl px-4">
-              <AnimatedText direction="up" className="text-5xl font-bold mb-6">
-                Confianza y Seguridad
-              </AnimatedText>
-              <AnimatedText direction="up" delay={200} className="text-2xl mb-8">
-                Tu socio confiable en transferencias internacionales
-              </AnimatedText>
-              <AnimatedText direction="up" delay={400}>
-                <p className="text-lg mb-8">
-                  Somos una empresa boliviana que opera en territorio nacional, brindándote una forma segura y rápida de
-                  realizar transferencias al exterior.
-                </p>
-                <p className="text-lg mb-8">
-                  Desde pagos a proveedores, cobro de ventas internacionales exportaciones, remesas hasta suscripciones.
-                </p>
-                <p className="text-lg">
-                  Contamos con oficinas en Cochabamba y Santa Cruz, operamos bajo normativa legal para que tus
-                  transferencias lleguen sin complicaciones.
-                </p>
-              </AnimatedText>
-            </div>
-          </div>
-        </div>
+        ></div>
       </section>
 
       {/* Stats Section */}
@@ -221,51 +197,21 @@ export default function HomePage({ onNavigateToServices }: HomePageProps) {
         ></div>
       </section>
 
-      {/* Video Section */}
+      {/* Video Section - Video a pantalla completa sin márgenes */}
       <section className="relative h-screen bg-gray-900">
-        <div className="absolute inset-0 flex items-center justify-center">
-          <div className="w-full h-full max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col items-center justify-center">
-            <AnimatedText direction="up" className="text-4xl font-bold text-white mb-8 text-center">
-              Conoce Más Sobre Nuestros Servicios
-            </AnimatedText>
-            <AnimatedText direction="up" delay={200} className="w-full h-[70vh] relative">
-              <div className="w-full h-full rounded-lg overflow-hidden shadow-2xl">
-                <video className="w-full h-full object-cover" poster="/placeholder.svg?height=720&width=1280" controls>
-                  <source src="#" type="video/mp4" />
-                  Tu navegador no soporta el elemento de video.
-                </video>
-              </div>
-            </AnimatedText>
-          </div>
+        <div className="absolute inset-0">
+          <video
+            className="w-full h-full object-cover"
+            autoPlay
+            muted
+            loop
+            playsInline
+            poster="/placeholder.svg?height=720&width=1280"
+          >
+            <source src="https://mstransfer.com.bo/wp-content/uploads/2025/03/IMG_7436.mp4" type="video/mp4" />
+            Tu navegador no soporta el elemento de video.
+          </video>
         </div>
-      </section>
-
-      {/* Locations Section */}
-       {/* Stats Section */}
-      <section className="py-20 bg-blue-600 text-white relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-r from-blue-600 via-blue-700 to-blue-800"></div>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-            <AnimatedText direction="left" className="text-center">
-              <div className="mb-4">
-                <AnimatedCounter end={20000} className="text-6xl font-bold" suffix="+" />
-              </div>
-              <p className="text-2xl">Transacciones Exitosas</p>
-            </AnimatedText>
-            <AnimatedText direction="right" delay={300} className="text-center">
-              <div className="text-2xl font-bold mb-4 gradient-text">AN/PE/MI/2024/0160</div>
-              <p className="text-lg">Operamos bajo normativa legal boliviana</p>
-              <p className="text-sm mt-2 opacity-90">Respaldo legal completo para todas nuestras operaciones</p>
-            </AnimatedText>
-          </div>
-        </div>
-
-        {/* Background decorative elements */}
-        <div className="absolute top-10 right-10 w-32 h-32 bg-white/10 rounded-full floating"></div>
-        <div
-          className="absolute bottom-10 left-10 w-24 h-24 bg-white/10 rounded-full floating"
-          style={{ animationDelay: "1s" }}
-        ></div>
       </section>
 
       {/* Video and Locations Section */}
@@ -321,10 +267,13 @@ export default function HomePage({ onNavigateToServices }: HomePageProps) {
             <AnimatedText direction="right" className="relative img-dynamic">
               <video
                 className="w-full h-64 object-cover rounded-lg shadow-lg"
+                autoPlay
+                muted
+                loop
+                playsInline
                 poster="/placeholder.svg?height=300&width=500"
-                controls
               >
-                <source src="#" type="video/mp4" />
+                <source src="https://mstransfer.com.bo/wp-content/uploads/2025/03/IMG_7436.mp4" type="video/mp4" />
                 Tu navegador no soporta el elemento de video.
               </video>
             </AnimatedText>
