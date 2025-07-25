@@ -10,7 +10,7 @@ export default function ServicesPage() {
   const services = [
     {
       icon: <DollarSign className="h-12 w-12 text-blue-600" />,
-      title: "Pagos en Dólares, Euros y Soles a Proveedores en el Exterior",
+      title: "PAGOS EN DÓLARES, EUROS Y SOLES A PROVEEDORES EN EL EXTERIOR",
       description: "Transferencias internacionales seguras para tus proveedores",
       details: [
         "Tiempo de transferencia entre 4 a 48 horas",
@@ -19,11 +19,11 @@ export default function ServicesPage() {
         "Documentación probatoria completa",
         "Aplicación Minuta de Instrucción AN/PE/MI/2024/0160",
       ],
-      image: "/placeholder.svg?height=300&width=400",
+      image: "/images/servicioDigital.png",
     },
     {
       icon: <Globe className="h-12 w-12 text-green-600" />,
-      title: "Entrega de Dólares, Euros y Soles en Bolivia",
+      title: "ENTREGA DE DÓLARES, EUROS Y SOLES EN BOLIVIA",
       description: "Para exportadores por cobro de ventas internacionales",
       details: [
         "Cobro en nuestra cuenta en el exterior",
@@ -32,11 +32,11 @@ export default function ServicesPage() {
         "Ideal para exportadores con dificultades bancarias",
         "Proceso seguro y documentado",
       ],
-      image: "/placeholder.svg?height=300&width=400",
+      image: "/images/entregaDolares.png",
     },
     {
       icon: <Ship className="h-12 w-12 text-orange-600" />,
-      title: "Pagos a Compañías Marítimas y Forwarders",
+      title: "PAGOS A COMPAÑIAS MARITIMAS Y FORWARDERS",
       description: "Pagos rápidos para evitar retrasos en tu carga",
       details: [
         "Pagos a navieras en el exterior",
@@ -45,11 +45,11 @@ export default function ServicesPage() {
         "Mantén tu logística bajo control",
         "Cumplimiento de todos los requisitos",
       ],
-      image: "/placeholder.svg?height=300&width=400",
+      image: "/images/pagosMaritimos.png",
     },
     {
       icon: <CreditCard className="h-12 w-12 text-purple-600" />,
-      title: "Entrega de Dólares en Bolivia por Remesas",
+      title: "ENTREGA DE DÓLARES EN BOLIVIA POR REMESAS",
       description: "De cualquier parte del mundo",
       details: [
         "Recibe dinero de familiares o socios",
@@ -58,11 +58,11 @@ export default function ServicesPage() {
         "Rapidez y respaldo legal",
         "Proceso transparente y seguro",
       ],
-      image: "/placeholder.svg?height=300&width=400",
+      image: "/images/entregaRemesas.jpg",
     },
     {
       icon: <ShoppingCart className="h-12 w-12 text-red-600" />,
-      title: "Pagos con Tarjeta para Compras por Internet",
+      title: "PAGOS CON TARJETA PARA COMPRAS POR INTERNET",
       description: "Alibaba, eBay, TikTok, Amazon y más",
       details: [
         "Compras en plataformas internacionales",
@@ -71,7 +71,7 @@ export default function ServicesPage() {
         "Airbnb, Booking y más",
         "Comisión competitiva",
       ],
-      image: "/placeholder.svg?height=300&width=400",
+      image: "/images/pagoTarjetas.png",
     },
     {
       icon: <FileText className="h-12 w-12 text-indigo-600" />,
@@ -84,7 +84,7 @@ export default function ServicesPage() {
         "Membresías internacionales",
         "Servicios contratados en el extranjero",
       ],
-      image: "/placeholder.svg?height=300&width=400",
+      image: "/images/pagoServicios.png",
     },
   ]
 
@@ -94,7 +94,7 @@ export default function ServicesPage() {
       <section
         className="relative py-32 text-white overflow-hidden"
         style={{
-          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/placeholder.svg?height=600&width=1920')`,
+          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/images/oficinaMr.png')`,
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}

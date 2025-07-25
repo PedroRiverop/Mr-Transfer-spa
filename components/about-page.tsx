@@ -152,7 +152,7 @@ export default function AboutPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <AnimatedText direction="left" className="img-dynamic">
               <img
-                src="/placeholder.svg?height=400&width=600"
+                src="/images/oficinaMr.png"
                 alt="Historia MR Transfer"
                 className="w-full h-80 object-cover rounded-lg shadow-lg"
               />

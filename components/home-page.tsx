@@ -56,7 +56,7 @@ export default function HomePage({ onNavigateToServices }: HomePageProps) {
       <section
         className="relative h-screen flex items-center justify-center text-white overflow-hidden"
         style={{
-          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('/images/hero1mr.png')`,
+          backgroundImage: `linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('/images/hero2mr.png')`,
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
@@ -66,9 +66,7 @@ export default function HomePage({ onNavigateToServices }: HomePageProps) {
             Soluciones en transferencias al exterior
           </AnimatedText>
           <AnimatedText direction="up" delay={300} className="text-xl md:text-2xl mb-8 leading-relaxed">
-            Realizamos transferencias en dólares, euros, y soles para pagos a proveedores en el exterior, entrega en
-            DÓLARES, en Bolivia, a exportadores por cobro de ventas internacionales y remesas a cualquier parte del
-            mundo.
+            Realizamos transferencias en dólares, euros y soles para pagos a proveedores en el exterior, entrega en DÓLARES en Bolivia a exportadores por cobro de ventas internacionales y remesas a cualquier parte del mundo.
           </AnimatedText>
           <AnimatedText direction="fade" delay={600} className="text-lg md:text-xl mb-8 text-yellow-300 pulse-slow">
             Sin límite de monto, bajo normativa aduanera, con respaldo legal, fácil, seguro y rápido.
@@ -165,7 +163,7 @@ export default function HomePage({ onNavigateToServices }: HomePageProps) {
         <div
           className="absolute inset-0 bg-cover bg-center"
           style={{
-            backgroundImage: `url('/images/about-section.webp')`,
+            backgroundImage: `url('/images/sobreMr.png')`,
           }}
         ></div>
       </section>
