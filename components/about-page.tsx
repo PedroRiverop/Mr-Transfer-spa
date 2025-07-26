@@ -27,17 +27,17 @@ export default function AboutPage() {
       description: "Operamos con total claridad en cada proceso",
     },
     {
-      icon: <Heart className="h-8 w-8 text-red-600" />,
+      icon: <Heart className="h-8 w-8 text-blue-600" />,
       title: "Responsabilidad",
       description: "Comprometidos con cada transferencia",
     },
     {
-      icon: <Users className="h-8 w-8 text-green-600" />,
+      icon: <Users className="h-8 w-8 text-blue-600" />,
       title: "Compromiso",
       description: "Dedicados al éxito de nuestros clientes",
     },
     {
-      icon: <Award className="h-8 w-8 text-purple-600" />,
+      icon: <Award className="h-8 w-8 text-blue-600" />,
       title: "Confianza",
       description: "Más que transferencias, generamos confianza",
     },
@@ -74,14 +74,15 @@ export default function AboutPage() {
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Hero Section */}
-      <section className="bg-gradient-to-r from-blue-600 to-blue-800 text-white py-20 relative overflow-hidden">
+      <section className=" text-white py-20 relative overflow-hidden" style={{
+    background: "linear-gradient(to right, #043484, #081E52)",
+  }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
           <AnimatedText direction="down" className="text-5xl font-bold mb-6 gradient-text">
             Sobre Nosotros
           </AnimatedText>
           <AnimatedText direction="up" delay={300} className="text-xl max-w-4xl mx-auto leading-relaxed">
-            En un contexto donde realizar pagos internacionales desde Bolivia puede ser complicado, en MR Transfer
-            ofrecemos una solución segura, rápida y confiable.
+            En un contexto donde realizar pagos internacionales desde Bolivia puede ser complicado, en MS Transfer ofrecemos una solución segura, rápida y confiable.
           </AnimatedText>
         </div>
 
@@ -315,7 +316,9 @@ export default function AboutPage() {
       </section>
 
       {/* CTA */}
-      <section className="py-20 bg-gradient-to-r from-orange-500 to-red-600 text-white relative overflow-hidden">
+      <section className="py-20 text-blue relative overflow-hidden" style={{
+    background: "linear-gradient(to right, #ecdc84, #d2ca7d)",
+  }}>
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
           <AnimatedText direction="up" className="floating">
             <Globe className="h-16 w-16 mx-auto mb-6" />

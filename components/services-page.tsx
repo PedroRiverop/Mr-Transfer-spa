@@ -136,13 +136,11 @@ export default function ServicesPage() {
                   <div className={index % 2 === 1 ? "lg:col-start-2" : ""}>
                     <Card className="h-full border-0 shadow-lg card-dynamic">
                       <CardHeader>
-                        <div className="flex items-center gap-4 mb-4">
+                        <div className="flex items-center gap-4 mb-4 text-left">
                           <div className="floating" style={{ animationDelay: `${index * 0.3}s` }}>
                             {service.icon}
                           </div>
-                          <Badge variant="secondary" className="text-sm pulse-slow">
-                            Servicio Premium
-                          </Badge>
+                          
                         </div>
                         <CardTitle className="text-2xl mb-2">{service.title}</CardTitle>
                         <CardDescription className="text-lg">{service.description}</CardDescription>
@@ -174,7 +172,9 @@ export default function ServicesPage() {
       </section>
 
       {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-r from-orange-500 to-red-600 text-white relative overflow-hidden">
+      <section className="py-20 text-blue relative overflow-hidden" style={{
+    background: "linear-gradient(to right, #ecdc84, #d2ca7d)",
+  }}>
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
           <AnimatedText direction="up" className="flex items-center justify-center gap-4 mb-8">
             <div className="floating">

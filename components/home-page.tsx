@@ -170,14 +170,14 @@ export default function HomePage({ onNavigateToServices }: HomePageProps) {
       </section>
 
       {/* Visual Presence Section - Solo imagen de fondo */}
-      <section className="relative h-screen">
-        <div
-          className="absolute inset-0 bg-cover bg-center"
-          style={{
-            backgroundImage: `url('/images/sobreMr.png')`,
-          }}
-        ></div>
-      </section>
+      <section className="relative min-h-screen sm:h-[60vh]">
+  <div
+    className="absolute inset-0 bg-contain bg-no-repeat bg-center"
+    style={{
+      backgroundImage: `url('/images/sobreMr.png')`,
+    }}
+  ></div>
+</section>
 
       {/* Stats Section */}
       <section className="py-20 bg-blue-600 text-white relative overflow-hidden">
@@ -217,29 +217,30 @@ export default function HomePage({ onNavigateToServices }: HomePageProps) {
             playsInline
             poster="/placeholder.svg?height=720&width=1280"
           >
-            <source src="https://mstransfer.com.bo/wp-content/uploads/2025/03/IMG_7436.mp4" type="video/mp4" />
+            <source src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/git-blob/prj_Mea2GNFsOUqe47wFg83tUh389ZeW/nmFvxS5_EfGqEgjARJWAzS/public/images/heroMrTransfer.mp4" type="video/mp4" />
             Tu navegador no soporta el elemento de video.
           </video>
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2  bg-opacity-50 text-white p-4 rounded-lg">
-            <p className="text-xl font-semibold">Visítanos en:</p>
-           
+            <div className="flex justify-center items-center gap-x-8 p-4 text-white text-4xl font-bold whitespace-nowrap">
+ 
             <a
               href="https://maps.app.goo.gl/aLx28UGC4W6aoSEg8"
               target="_blank"
               rel="noopener noreferrer"
-              className="hover:text-blue-300"
+              className="hover:text-blue-300 transition duration-200"
             >
               Cochabamba
             </a>
-            <br />
             <a
               href="https://maps.app.goo.gl/S4Qh6VHRkQfSHTQQ8"
               target="_blank"
               rel="noopener noreferrer"
-              className="hover:text-blue-300"
+              className="hover:text-blue-300 transition duration-200"
             >
               Santa Cruz
             </a>
+          </div>
+
           </div>
         </div>
       </section>
@@ -291,7 +292,7 @@ export default function HomePage({ onNavigateToServices }: HomePageProps) {
                 playsInline
                 poster="/placeholder.svg?height=300&width=500"
               >
-                <source src="/images/" type="video/mp4" />
+                <source src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/git-blob/prj_Mea2GNFsOUqe47wFg83tUh389ZeW/nmFvxS5_EfGqEgjARJWAzS/public/images/heroMrTransfer.mp4" type="video/mp4" />
                 Tu navegador no soporta el elemento de video.
               </video>
             </AnimatedText>
