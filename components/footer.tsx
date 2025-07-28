@@ -66,7 +66,7 @@ export default function Footer() {
 
         <AnimatedText direction="fade" delay={500}>
           <div className="border-t border-gray-700 mt-8 pt-8 text-center text-gray-300">
-            <p>&copy; 2024 MR Transfer. Todos los derechos reservados.</p>
+            <p>© 2024 MS Transfer. Todos los derechos reservados.</p>
             <p className="text-xs mt-2 opacity-70">
               Desarrollado por{" "}
               <a

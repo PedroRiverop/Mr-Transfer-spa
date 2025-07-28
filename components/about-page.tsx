@@ -78,7 +78,7 @@ export default function AboutPage() {
     background: "linear-gradient(to right, #043484, #081E52)",
   }}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
-          <AnimatedText direction="down" className="text-5xl font-bold mb-6 gradient-text">
+          <AnimatedText direction="down" className="text-5xl font-bold mb-6">
             Sobre Nosotros
           </AnimatedText>
           <AnimatedText direction="up" delay={300} className="text-xl max-w-4xl mx-auto leading-relaxed">
@@ -175,7 +175,7 @@ export default function AboutPage() {
                 <h2 className="text-4xl font-bold mb-6 gradient-text">Nuestra Historia</h2>
                 <div className="space-y-4 text-lg leading-relaxed">
                   <p>
-                    <span className="text-orange-500 font-bold pulse-slow">MR Transfer nace el año 2024</span> como
+                    <span className="font-bold pulse-slow">MR Transfer nace el año 2024</span> como
                     respuesta a una necesidad concreta: la dificultad para realizar pagos internacionales desde Bolivia.
                   </p>
                   <p>
@@ -287,9 +287,7 @@ export default function AboutPage() {
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <AnimatedText direction="up" className="text-4xl font-bold text-gray-900 mb-4">
-              Nuestros Partners
-            </AnimatedText>
+
             <AnimatedText direction="up" delay={200} className="text-xl text-gray-600">
               Te brindamos asesoramiento integral con nuestros aliados estratégicos
             </AnimatedText>
@@ -367,7 +365,7 @@ export default function AboutPage() {
                 href="https://wa.link/aqmtjx"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-green-500 hover:bg-green-600 text-white p-4 rounded-full transition-colors"
+                className="bg-blue-500 hover:bg-blue-600 text-white p-4 rounded-full transition-colors"
               >
                 <MessageCircle className="h-6 w-6" />
               </a>
@@ -375,7 +373,7 @@ export default function AboutPage() {
                 href="https://www.instagram.com/mstransferbolivia/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-pink-500 hover:bg-pink-600 text-white p-4 rounded-full transition-colors"
+                className="bg-blue-500 hover:bg-blue-600 text-white p-4 rounded-full transition-colors"
               >
                 <Instagram className="h-6 w-6" />
               </a>
@@ -391,7 +389,7 @@ export default function AboutPage() {
                 href="https://www.tiktok.com/@ms_transfer?lang=es"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-black hover:bg-gray-800 text-white p-4 rounded-full transition-colors"
+                className="bg-blue-600 hover:bg-blue-800 text-white p-4 rounded-full transition-colors"
               >
                 <svg className="h-6 w-6" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z" />

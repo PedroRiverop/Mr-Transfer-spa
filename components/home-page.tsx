@@ -109,7 +109,7 @@ export default function HomePage({ onNavigateToServices }: HomePageProps) {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <AnimatedText direction="up" className="mb-4">
-              <h2 className="text-5xl font-bold bg-gradient-to-r from-blue-600 via-purple-500 to-orange-500 bg-clip-text text-transparent animate-pulse">
+              <h2 className="text-5xl font-bold bg-gradient-to-r bg-clip-text text-transparent animate-pulse" style={{color: "#043484"}}>
                 Nuestros Servicios
               </h2>
             </AnimatedText>
@@ -135,7 +135,7 @@ export default function HomePage({ onNavigateToServices }: HomePageProps) {
                         <CardDescription>{service.description}</CardDescription>
                       </CardHeader>
                       <CardContent>
-                        <Button variant="outline" className="w-full bg-transparent btn-dynamic">
+                        <Button variant="outline" className="w-full bg-transparent btn-dynamic" >
                           Ver Detalles
                         </Button>
                       </CardContent>
@@ -161,7 +161,7 @@ export default function HomePage({ onNavigateToServices }: HomePageProps) {
             <Button
               onClick={onNavigateToServices}
               size="lg"
-              className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 btn-dynamic"
+              className="text-white px-8 py-4 btn-dynamic" style={{backgroundColor: "#043484"}}
             >
               Ver Más Servicios
             </Button>
@@ -181,7 +181,9 @@ export default function HomePage({ onNavigateToServices }: HomePageProps) {
 
       {/* Stats Section */}
       <section className="py-20 bg-blue-600 text-white relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-r from-blue-600 via-blue-700 to-blue-800"></div>
+        <div className="absolute inset-0 bg-gradient-to-r" style={{
+    background: "linear-gradient(to right, #043484, #081E52)",
+  }}></div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <AnimatedText direction="left" className="text-center">
@@ -191,7 +193,7 @@ export default function HomePage({ onNavigateToServices }: HomePageProps) {
               <p className="text-2xl">Transacciones Exitosas</p>
             </AnimatedText>
             <AnimatedText direction="right" delay={300} className="text-center">
-              <div className="text-2xl font-bold mb-4 gradient-text">AN/PE/MI/2024/0160</div>
+              <div className="text-2xl font-bold mb-4 ">AN/PE/MI/2024/0160</div>
               <p className="text-lg">Operamos bajo normativa legal boliviana</p>
               <p className="text-sm mt-2 opacity-90">Respaldo legal completo para todas nuestras operaciones</p>
             </AnimatedText>
@@ -220,7 +222,7 @@ export default function HomePage({ onNavigateToServices }: HomePageProps) {
             <source src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/git-blob/prj_Mea2GNFsOUqe47wFg83tUh389ZeW/nmFvxS5_EfGqEgjARJWAzS/public/images/heroMrTransfer.mp4" type="video/mp4" />
             Tu navegador no soporta el elemento de video.
           </video>
-          <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2  bg-opacity-50 text-white p-4 rounded-lg">
+          <div className="absolute top-1/2 right-0 -translate-x-2/9 -translate-y-1/2  bg-opacity-50 text-white p-4 rounded-lg">
             <div className="flex justify-center items-center gap-x-8 p-4 text-white text-4xl font-bold whitespace-nowrap">
  
             <a

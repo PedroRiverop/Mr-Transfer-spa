@@ -79,7 +79,7 @@ export default function ContactPage() {
         }}
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
-         <AnimatedText direction="up" delay={150} className="text-2xl md:text-5xl font-semibold mb-8 text-blue-200">
+         <AnimatedText direction="up" delay={150} className="text-2xl md:text-5xl font-semibold mb-8 ">
             CONTÁCTANOS
           </AnimatedText>
           <AnimatedText direction="up" delay={300} className="text-xl max-w-3xl mx-auto">
@@ -91,7 +91,7 @@ export default function ContactPage() {
         {/* Floating decorative elements */}
         <div className="absolute top-20 left-10 w-20 h-20 bg-blue-500/20 rounded-full floating"></div>
         <div
-          className="absolute bottom-20 right-10 w-16 h-16 bg-green-500/20 rounded-full floating"
+          className="absolute bottom-20 right-10 w-16 h-16 bg-blue-500/20 rounded-full floating"
           style={{ animationDelay: "1s" }}
         ></div>
         <div
@@ -121,12 +121,12 @@ export default function ContactPage() {
             <AnimatedText direction="up" delay={200}>
               <Card className="text-center border-0 shadow-lg hover:shadow-xl transition-shadow">
                 <CardHeader>
-                  <Mail className="h-12 w-12 text-green-600 mx-auto mb-4" />
+                  <Mail className="h-12 w-12 text-blue-600 mx-auto mb-4" />
                   <CardTitle>Escríbenos</CardTitle>
                   <CardDescription>Respuesta en menos de 24 horas</CardDescription>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-lg font-semibold text-green-600">info@mrtransfer.com</p>
+                  <p className="text-lg font-semibold text-blue-600">info@mrtransfer.com</p>
                   <p className="text-sm text-gray-600 mt-2">Respuesta garantizada</p>
                 </CardContent>
               </Card>
@@ -135,12 +135,12 @@ export default function ContactPage() {
             <AnimatedText direction="up" delay={300}>
               <Card className="text-center border-0 shadow-lg hover:shadow-xl transition-shadow">
                 <CardHeader>
-                  <MessageCircle className="h-12 w-12 text-green-500 mx-auto mb-4" />
+                  <MessageCircle className="h-12 w-12 text-blue-500 mx-auto mb-4" />
                   <CardTitle>WhatsApp</CardTitle>
                   <CardDescription>Chat directo y rápido</CardDescription>
                 </CardHeader>
                 <CardContent>
-                  <Button onClick={handleWhatsApp} className="bg-green-500 hover:bg-green-600 text-white w-full">
+                  <Button onClick={handleWhatsApp} className="bg-blue-500 hover:bg-green-600 text-white w-full">
                     <MessageCircle className="h-4 w-4 mr-2" />
                     Chatear Ahora
                   </Button>

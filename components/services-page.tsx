@@ -22,7 +22,7 @@ export default function ServicesPage() {
       image: "/images/servicioDigital.png",
     },
     {
-      icon: <Globe className="h-12 w-12 text-green-600" />,
+      icon: <Globe className="h-12 w-12 text-blue-600" />,
       title: "ENTREGA DE DÓLARES, EUROS Y SOLES EN BOLIVIA",
       description: "Para exportadores por cobro de ventas internacionales",
       details: [
@@ -35,7 +35,7 @@ export default function ServicesPage() {
       image: "/images/entregaDolares.png",
     },
     {
-      icon: <Ship className="h-12 w-12 text-orange-600" />,
+      icon: <Ship className="h-12 w-12 text-blue-600" />,
       title: "PAGOS A COMPAÑIAS MARITIMAS Y FORWARDERS",
       description: "Pagos rápidos para evitar retrasos en tu carga",
       details: [
@@ -48,7 +48,7 @@ export default function ServicesPage() {
       image: "/images/pagosMaritimos.png",
     },
     {
-      icon: <CreditCard className="h-12 w-12 text-purple-600" />,
+      icon: <CreditCard className="h-12 w-12 text-blue-600" />,
       title: "ENTREGA DE DÓLARES EN BOLIVIA POR REMESAS",
       description: "De cualquier parte del mundo",
       details: [
@@ -61,7 +61,7 @@ export default function ServicesPage() {
       image: "/images/entregaRemesas.jpg",
     },
     {
-      icon: <ShoppingCart className="h-12 w-12 text-red-600" />,
+      icon: <ShoppingCart className="h-12 w-12 text-blue-600" />,
       title: "PAGOS CON TARJETA PARA COMPRAS POR INTERNET",
       description: "Alibaba, eBay, TikTok, Amazon y más",
       details: [
@@ -74,7 +74,7 @@ export default function ServicesPage() {
       image: "/images/pagoTarjetas.png",
     },
     {
-      icon: <FileText className="h-12 w-12 text-indigo-600" />,
+      icon: <FileText className="h-12 w-12 text-blue-600" />,
       title: "Pagos de Servicios y Suscripciones",
       description: "En el exterior",
       details: [
@@ -100,7 +100,7 @@ export default function ServicesPage() {
         }}
       >
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10">
-          <AnimatedText direction="up" delay={150} className="text-2xl md:text-5xl font-semibold mb-8 text-blue-200">
+          <AnimatedText direction="up" delay={150} className="text-2xl md:text-5xl font-semibold mb-8 text-[#043484]">
             NUESTROS SERVICIOS
           </AnimatedText>
           <AnimatedText direction="up" delay={300} className="text-2xl mb-8 pulse-slow">
@@ -181,7 +181,7 @@ export default function ServicesPage() {
               <Shield className="h-16 w-16" />
             </div>
             <div>
-              <h2 className="text-4xl font-bold mb-2 gradient-text">ELIGE TRANQUILIDAD</h2>
+              <h2 className="text-4xl font-bold mb-2" style={{color: "#043484"}}>ELIGE TRANQUILIDAD</h2>
               <h3 className="text-3xl font-bold">ELIGE MR TRANSFER</h3>
             </div>
           </AnimatedText>
