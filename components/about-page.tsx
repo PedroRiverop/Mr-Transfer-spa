@@ -218,7 +218,7 @@ export default function AboutPage() {
             {offerings.map((offering, index) => (
               <AnimatedText key={index} direction={index % 2 === 0 ? "left" : "right"} delay={index * 50}>
                 <div className="flex items-start gap-3 hover:bg-blue-50 p-3 rounded-lg transition-colors">
-                  <CheckCircle className="h-6 w-6 text-green-600 mt-1 flex-shrink-0 pulse-slow" />
+                  <CheckCircle className="h-6 w-6 text-blue-600 mt-1 flex-shrink-0 pulse-slow" />
                   <span className="text-lg text-gray-700">{offering}</span>
                 </div>
               </AnimatedText>
@@ -261,7 +261,7 @@ export default function AboutPage() {
                 </h3>
                 <div className="space-y-4">
                   <div className="text-center p-4 bg-green-50 rounded-lg">
-                    <div className="text-3xl font-bold text-green-600">
+                    <div className="text-3xl font-bold text-blue-600">
                       <AnimatedCounter end={20000} suffix="+" />
                     </div>
                     <div className="text-gray-700">Transferencias Exitosas</div>
@@ -273,7 +273,7 @@ export default function AboutPage() {
                     <div className="text-gray-700">Historial Limpio</div>
                   </div>
                   <div className="text-center p-4 bg-purple-50 rounded-lg">
-                    <div className="text-3xl font-bold text-purple-600 neon-text">2024</div>
+                    <div className="text-3xl font-bold text-blue-600">2024</div>
                     <div className="text-gray-700">Año de Fundación</div>
                   </div>
                 </div>
@@ -283,35 +283,7 @@ export default function AboutPage() {
         </div>
       </section>
 
-      {/* Partners */}
-      <section className="py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-
-            <AnimatedText direction="up" delay={200} className="text-xl text-gray-600">
-              Te brindamos asesoramiento integral con nuestros aliados estratégicos
-            </AnimatedText>
-          </div>
-
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {partners.map((partner, index) => (
-              <AnimatedText key={index} direction="up" delay={index * 100}>
-                <Card className="text-center border-0 shadow-lg card-dynamic h-full">
-                  <CardHeader>
-                    <div className="flex justify-center mb-4 floating" style={{ animationDelay: `${index * 0.3}s` }}>
-                      <Handshake className="h-12 w-12 text-orange-600" />
-                    </div>
-                    <CardTitle className="text-lg">{partner}</CardTitle>
-                  </CardHeader>
-                  <CardContent>
-                    <p className="text-gray-600">Alianza estratégica para tu éxito</p>
-                  </CardContent>
-                </Card>
-              </AnimatedText>
-            ))}
-          </div>
-        </div>
-      </section>
+      
 
       {/* CTA */}
       <section className="py-20 text-blue relative overflow-hidden" style={{
