@@ -246,14 +246,14 @@ export default function ContactPage() {
 
       
       {/* Emergency Contact */}
-      <section className="py-20 bg-red-600 text-white">
+      <section className="py-20 text-blue-500">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl font-bold mb-6">¿Necesitas Ayuda Urgente?</h2>
           <p className="text-xl mb-8">Para consultas urgentes fuera del horario de oficina, contáctanos por WhatsApp</p>
           <Button
             onClick={handleWhatsApp}
             size="lg"
-            className="bg-green-500 hover:bg-green-600 text-white px-8 py-4 text-lg"
+            className="bg-blue-500 hover:bg-blue-600 text-white px-8 py-4 text-lg"
           >
             <MessageCircle className="h-6 w-6 mr-2" />
             WhatsApp 24/7
