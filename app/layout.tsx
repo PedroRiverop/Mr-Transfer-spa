@@ -10,7 +10,7 @@ export const metadata: Metadata = {
     "Transferencias en dólares, euros y soles. Paga a proveedores en el exterior, recibe en Bolivia y envía remesas al mundo. Rápido, seguro y confiable.",
   generator: "Pedroriverop",
   authors: [{ name: "Pedroriverop" }],
-  
+
   openGraph: {
     title: "MS Transfer | Transferencias Internacionales Seguras",
     description:
