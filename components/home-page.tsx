@@ -170,14 +170,15 @@ export default function HomePage({ onNavigateToServices }: HomePageProps) {
       </section>
 
       {/* Visual Presence Section - Solo imagen de fondo */}
-      <section className="relative min-h-screen sm:h-[60vh]">
-  <div
-    className="absolute inset-0 bg-contain bg-no-repeat bg-center"
-    style={{
-      backgroundImage: `url('/images/sobreMr.png')`,
-    }}
-  ></div>
+      <section className="flex items-center justify-center min-h-0 h-auto py-0 m-0">
+  <img
+    src="/images/sobreMr.png"
+    alt="Imagen completa"
+    className="max-h-screen w-auto h-auto object-contain"
+  />
 </section>
+
+
 
       {/* Stats Section */}
       <section className="py-20 bg-blue-600 text-white relative overflow-hidden">
@@ -223,25 +224,25 @@ export default function HomePage({ onNavigateToServices }: HomePageProps) {
             Tu navegador no soporta el elemento de video.
           </video>
           <div className="absolute top-1/2 right-0 -translate-x-2/9 -translate-y-1/2  bg-opacity-50 text-white p-4 rounded-lg">
-            <div className="flex justify-center items-center gap-x-8 p-4 text-white text-4xl font-bold whitespace-nowrap">
- 
-            <a
-              href="https://maps.app.goo.gl/aLx28UGC4W6aoSEg8"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:text-blue-300 transition duration-200"
-            >
-              Cochabamba
-            </a>
-            <a
-              href="https://maps.app.goo.gl/S4Qh6VHRkQfSHTQQ8"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:text-blue-300 transition duration-200"
-            >
-              Santa Cruz
-            </a>
-          </div>
+            <div className="flex flex-col sm:flex-row justify-center items-center gap-y-4 sm:gap-x-8 p-4 text-white text-2xl sm:text-4xl font-bold whitespace-nowrap text-center">
+  <a
+    href="https://maps.app.goo.gl/aLx28UGC4W6aoSEg8"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="hover:text-blue-300 transition duration-200"
+  >
+    Cochabamba
+  </a>
+  <a
+    href="https://maps.app.goo.gl/S4Qh6VHRkQfSHTQQ8"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="hover:text-blue-300 transition duration-200"
+  >
+    Santa Cruz
+  </a>
+</div>
+
 
           </div>
         </div>
