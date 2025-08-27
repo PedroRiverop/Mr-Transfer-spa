@@ -118,7 +118,7 @@ export default function AboutPage() {
             </AnimatedText>
             <AnimatedText direction="right" className="img-dynamic">
               <img
-                src="/images/nosotrosMr1.png"
+                src="/images/nosotrosMR1.jpg"
                 alt="Oficina MR Transfer"
                 className="w-full h-80 object-cover rounded-lg shadow-lg"
               />
@@ -135,7 +135,7 @@ export default function AboutPage() {
               Nuestra Filosofía
             </AnimatedText>
             <AnimatedText direction="up" delay={200} className="text-xl text-gray-600 max-w-3xl mx-auto">
-              En MR Transfer creemos en hacer las cosas bien, con transparencia, responsabilidad y compromiso.
+              En MS Transfer creemos en hacer las cosas bien, con transparencia, responsabilidad y compromiso.
             </AnimatedText>
           </div>
 
@@ -165,17 +165,17 @@ export default function AboutPage() {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <AnimatedText direction="left" className="img-dynamic">
               <img
-                src="/images/oficinaMr.png"
-                alt="Historia MR Transfer"
+                src="/images/oficinaMr.jpg"
+                alt="Historia MS Transfer"
                 className="w-full h-80 object-cover rounded-lg shadow-lg"
               />
             </AnimatedText>
             <AnimatedText direction="right">
               <div>
-                <h2 className="text-4xl font-bold mb-6 gradient-text">Nuestra Historia</h2>
+                <h2 className="text-4xl font-bold mb-6 text-white">Nuestra Historia</h2>
                 <div className="space-y-4 text-lg leading-relaxed">
                   <p>
-                    <span className="font-bold pulse-slow">MR Transfer nace el año 2024</span> como
+                    <span className="font-bold pulse-slow">MS Transfer nace el año 2024</span> como
                     respuesta a una necesidad concreta: la dificultad para realizar pagos internacionales desde Bolivia.
                   </p>
                   <p>

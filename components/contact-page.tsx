@@ -23,6 +23,13 @@ export default function ContactPage() {
 
   const locations = [
     {
+      city: "Cochabamba",
+      address: "Calle Los claveles S/N casi esquina Victor Ustariz (Frente a Aduana)",
+      phone: "+591 714 53 040",
+      email: "mstransferbolivia@gmail.com",
+      hours: "Lun - Vie: 8:00 - 17:00, Sáb: 8:00 - 12:00",
+      mapUrl: "https://maps.app.goo.gl/aLx28UGC4W6aoSEg8",
+    },{
       city: "Santa Cruz",
       address: "Avenida Rosita Pochi #4430 casi esquina Hilanderia/Barrio Hilanderia entre 4to y 5to anillo",
       phone: "+591 714 53 040",
@@ -30,14 +37,7 @@ export default function ContactPage() {
       hours: "Lun - Vie: 8:00 - 17:00, Sáb: 8:00 - 12:00",
       mapUrl: "https://maps.app.goo.gl/S4Qh6VHRkQfSHTQQ8",
     },
-    {
-      city: "Cochabamba",
-      address: "Calle Los claveles S/N casi esquina Victor Ustariz (Frente a Aduana)",
-      phone: "+591 714 53 040",
-      email: "mstransferbolivia@gmail.com",
-      hours: "Lun - Vie: 8:00 - 17:00, Sáb: 8:00 - 12:00",
-      mapUrl: "https://maps.app.goo.gl/aLx28UGC4W6aoSEg8",
-    },
+
   ]
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
@@ -112,8 +112,8 @@ export default function ContactPage() {
                   <CardDescription>Atención inmediata por teléfono</CardDescription>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-lg font-semibold text-blue-600">+591 123 456 789</p>
-                  <p className="text-sm text-gray-600 mt-2">Lun - Vie: 8:00 - 18:00</p>
+                  <p className="text-lg font-semibold text-blue-600">+591 714 53 040</p>
+                  <p className="text-sm text-gray-600 mt-2">Lun - Vie: 8:00 - 17:00, Sáb: 8:00 - 12:00</p>
                 </CardContent>
               </Card>
             </AnimatedText>
@@ -126,7 +126,7 @@ export default function ContactPage() {
                   <CardDescription>Respuesta en menos de 24 horas</CardDescription>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-lg font-semibold text-blue-600">info@mrtransfer.com</p>
+                  <p className="text-lg font-semibold text-blue-600">mstransferbolivia@gmail.com</p>
                   <p className="text-sm text-gray-600 mt-2">Respuesta garantizada</p>
                 </CardContent>
               </Card>
@@ -213,7 +213,7 @@ export default function ContactPage() {
               <div>
                 <h4 className="text-lg font-semibold mb-4 text-center">Cochabamba</h4>
                 <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3048.4!2d-66.1568!3d-17.3895!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTfCsDIzJzIyLjIiUyA2NsKwMDknMjQuNSJX!5e0!3m2!1ses!2sbo!4v1234567890"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3048.4!2d-63.1821!3d-17.7834!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x93e375042a8c1f4d%3A0x19a4d16509a431f0!2sMS%20TRANSFER!5e0!3m2!1ses!2sar!4v1756313761317!5m2!1ses!2sar"
                   width="100%"
                   height="300"
                   style={{ border: 0 }}
@@ -227,7 +227,7 @@ export default function ContactPage() {
               <div>
                 <h4 className="text-lg font-semibold mb-4 text-center">Santa Cruz</h4>
                 <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3048.4!2d-63.1821!3d-17.7834!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTfCsDQ2JzU4LjQiUyA2M8KwMTAnNTUuNiJX!5e0!3m2!1ses!2sbo!4v1234567890"
+                  src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3798.7398822309283!2d-63.220664000000006!3d-17.803918!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTfCsDQ4JzE0LjEiUyA2M8KwMTMnMTQuNCJX!5e0!3m2!1ses!2sar!4v1756314598652!5m2!1ses!2sar"
                   width="100%"
                   height="300"
                   style={{ border: 0 }}

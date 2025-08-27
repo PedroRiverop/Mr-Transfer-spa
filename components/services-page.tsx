@@ -17,7 +17,7 @@ export default function ServicesPage() {
         "Trabajo con Poder Notariado",
         "SWIFT bancario como sustento",
         "Documentación probatoria completa",
-        "Aplicación Minuta de Instrucción AN/PE/MI/2024/0160",
+        "Aplicación Minuta de Instrucción AN/PE/MI/2024/0160 emitido por la Aduana Nacional",
       ],
       image: "/images/servicioDigital.png",
     },
@@ -107,7 +107,7 @@ export default function ServicesPage() {
             Que la falta de DÓLARES... ¡No te impida, SEGUIR CRECIENDO!
           </AnimatedText>
           <AnimatedText direction="fade" delay={600} className="text-lg max-w-4xl mx-auto leading-relaxed">
-            En Bolivia, pagar al exterior no siempre es fácil. Por eso nació MR Transfer: una empresa boliviana que
+            En Bolivia, pagar al exterior no siempre es fácil. Por eso nació MS Transfer: una empresa boliviana que
             facilita tus pagos internacionales de forma segura, rápida y bajo normativa legal.
           </AnimatedText>
         </div>
@@ -182,7 +182,7 @@ export default function ServicesPage() {
             </div>
             <div>
               <h2 className="text-4xl font-bold mb-2" style={{color: "#043484"}}>ELIGE TRANQUILIDAD</h2>
-              <h3 className="text-3xl font-bold">ELIGE MR TRANSFER</h3>
+              <h3 className="text-3xl font-bold">ELIGE MS TRANSFER</h3>
             </div>
           </AnimatedText>
           <AnimatedText direction="up" delay={300} className="text-xl mb-8">

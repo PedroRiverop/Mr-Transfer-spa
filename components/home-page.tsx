@@ -69,7 +69,7 @@ export default function HomePage({ onNavigateToServices }: HomePageProps) {
       >
         <div className="text-center max-w-4xl mx-auto px-4 z-10">
           <AnimatedText direction="down" className="text-4xl md:text-5xl font-bold mb-6 text-white">
-            TRANSFERENCIAS INTERNACIONALES
+            SOLUCIONES EN TRANSFERENCIAS INTERNACIONALES
           </AnimatedText>
           <AnimatedText direction="up" delay={150} className="text-2xl md:text-3xl font-semibold mb-8 text-blue-200">
             RÁPIDAS Y SEGURAS
@@ -172,8 +172,8 @@ export default function HomePage({ onNavigateToServices }: HomePageProps) {
       {/* Visual Presence Section - Solo imagen de fondo */}
       <section className="flex items-center justify-center min-h-0 h-auto py-0 m-0">
   <img
-    src="/images/sobreMr.png"
-    alt="Imagen completa"
+    src="/images/sobreMS.png"
+    alt="MS TRANSFR about"
     className="max-h-screen w-auto h-auto object-contain"
   />
 </section>
@@ -209,44 +209,7 @@ export default function HomePage({ onNavigateToServices }: HomePageProps) {
         ></div>
       </section>
 
-      {/* Video Section - Video a pantalla completa sin márgenes */}
-      <section className="relative h-screen bg-gray-900">
-        <div className="absolute inset-0">
-          <video
-            className="w-full h-full object-cover"
-            autoPlay
-            muted
-            loop
-            playsInline
-            poster="/placeholder.svg?height=720&width=1280"
-          >
-            <source src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/git-blob/prj_Mea2GNFsOUqe47wFg83tUh389ZeW/nmFvxS5_EfGqEgjARJWAzS/public/images/heroMrTransfer.mp4" type="video/mp4" />
-            Tu navegador no soporta el elemento de video.
-          </video>
-          <div className="absolute top-1/2 right-0 -translate-x-2/9 -translate-y-1/2  bg-opacity-50 text-white p-4 rounded-lg">
-            <div className="flex flex-col sm:flex-row justify-center items-center gap-y-4 sm:gap-x-8 p-4 text-white text-2xl sm:text-4xl font-bold whitespace-nowrap text-center">
-  <a
-    href="https://maps.app.goo.gl/aLx28UGC4W6aoSEg8"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="hover:text-blue-300 transition duration-200"
-  >
-    Cochabamba
-  </a>
-  <a
-    href="https://maps.app.goo.gl/S4Qh6VHRkQfSHTQQ8"
-    target="_blank"
-    rel="noopener noreferrer"
-    className="hover:text-blue-300 transition duration-200"
-  >
-    Santa Cruz
-  </a>
-</div>
-
-
-          </div>
-        </div>
-      </section>
+      
 
       {/* Video and Locations Section */}
       <section className="py-20 bg-gray-900 text-white relative">
@@ -265,7 +228,7 @@ export default function HomePage({ onNavigateToServices }: HomePageProps) {
                         rel="noopener noreferrer"
                         className="hover:text-orange-500 transition-colors"
                       >
-                        Sucursal Santa Cruz - Av. Rosita Pochi #4430
+                        Sucursal Cochabamba -  C. Los claveles S/N casi esquina Victor Ustariz
                       </a>
                     </div>
                   </AnimatedText>
@@ -279,7 +242,7 @@ export default function HomePage({ onNavigateToServices }: HomePageProps) {
                         rel="noopener noreferrer"
                         className="hover:text-orange-500 transition-colors"
                       >
-                        Sucursal Cochabamba -  C. Los claveles S/N casi esquina Victor Ustariz
+                        Sucursal Santa Cruz - Av. Rosita Pochi #4430
                       </a>
                     </div>
                   </AnimatedText>
@@ -287,17 +250,11 @@ export default function HomePage({ onNavigateToServices }: HomePageProps) {
               </div>
             </AnimatedText>
             <AnimatedText direction="right" className="relative img-dynamic">
-              <video
+              <img
+                src="/images/mapaSoluciones.png"
+                alt="Mapa"
                 className="w-full h-64 object-cover rounded-lg shadow-lg"
-                autoPlay
-                muted
-                loop
-                playsInline
-                poster="/placeholder.svg?height=300&width=500"
-              >
-                <source src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/git-blob/prj_Mea2GNFsOUqe47wFg83tUh389ZeW/nmFvxS5_EfGqEgjARJWAzS/public/images/heroMrTransfer.mp4" type="video/mp4" />
-                Tu navegador no soporta el elemento de video.
-              </video>
+              />
             </AnimatedText>
           </div>
         </div>
