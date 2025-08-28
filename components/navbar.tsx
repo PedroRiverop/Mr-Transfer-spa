@@ -29,9 +29,8 @@ export default function Navbar({ currentView, onNavigate }: NavbarProps) {
               <img
                 src="/images/logo-mr-transfer.webp"
                 alt="MR Transfer"
-                className="h-10 w-auto hover:scale-105 transition-transform duration-300 filter brightness-0 invert"
+                className="h-16 w-auto hover:scale-105 transition-transform duration-300 filter brightness-0 invert"
               />
-              <span className="font-bold text-white hidden sm:block">MS Transfer</span>
             </div>
           </div>
 

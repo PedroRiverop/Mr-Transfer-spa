@@ -1,7 +1,8 @@
 "use client"
 
-import { Phone, Mail, Clock } from "lucide-react"
+import { Phone, Mail, Clock, Facebook, Instagram, MessageCircleMore, Music2  } from "lucide-react"
 import AnimatedText from "./animated-text"
+
 
 export default function Footer() {
   return (
@@ -43,6 +44,44 @@ export default function Footer() {
                   <Mail className="h-4 w-4" />
                   <span>mstransferbolivia@gmail.com</span>
                 </div>
+                <div className="mt-4">
+  <h5 className="text-md font-semibold mb-2">Redes Sociales</h5>
+  <div className="flex gap-4 text-gray-300">
+    <a
+      href="https://wa.link/aqmtjx"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="hover:text-green-400 transition-colors"
+    >
+      <MessageCircleMore className="h-5 w-5" />
+    </a>
+    <a
+      href="https://www.instagram.com/mstransferbolivia/"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="hover:text-pink-400 transition-colors"
+    >
+      <Instagram className="h-5 w-5" />
+    </a>
+    <a
+      href="https://www.facebook.com/mstransferbolivia"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="hover:text-blue-400 transition-colors"
+    >
+      <Facebook className="h-5 w-5" />
+    </a>
+    <a
+      href="https://www.tiktok.com/@ms_transfer?lang=es"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="hover:text-white transition-colors"
+    >
+      <Music2 className="h-5 w-5" />
+    </a>
+  </div>
+</div>
+
               </div>
             </div>
           </AnimatedText>

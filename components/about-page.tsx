@@ -183,8 +183,7 @@ export default function AboutPage() {
                     empresas ficticias en redes sociales.
                   </p>
                   <p>
-                    Así decidimos construir una empresa{" "}
-                    <span className="text-yellow-300 font-bold gradient-text">100% legal, transparente</span> y enfocada
+                    Así decidimos construir una empresa 100% legal, transparente y enfocada
                     en facilitar y seguir promoviendo el comercio global para bolivianos, cuidando cada paso del
                     proceso.
                   </p>
